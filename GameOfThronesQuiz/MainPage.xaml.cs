@@ -35,18 +35,12 @@ namespace GameOfThronesQuiz
             }
         }
 
-        // Handle selection changed on LongListSelector
-        private void MainLongListSelector_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void StartButton_Click(object sender, RoutedEventArgs e)
         {
-            // If selected item is null (no selection) do nothing
-            if (MainLongListSelector.SelectedItem == null)
-                return;
+            //App.ViewModel.selectRandomQuestions();
 
-            // Navigate to the new page
-            NavigationService.Navigate(new Uri("/DetailsPage.xaml?selectedItem=" + (MainLongListSelector.SelectedItem as ItemViewModel).ID, UriKind.Relative));
-
-            // Reset selected item to null (no selection)
-            MainLongListSelector.SelectedItem = null;
+            NavigationService.Navigate(
+                new Uri("/QuestionsPage.xaml?question=0", UriKind.Relative));
         }
 
         // Sample code for building a localized ApplicationBar
