@@ -15,6 +15,12 @@ namespace GameOfThronesQuiz
     {
         private static MainViewModel viewModel = null;
 
+        public static int questionNumber = 0;
+        public static int numOfQuestions = 50;
+        public static int[] score = new int[numOfQuestions];
+        public static DateTime startTime;
+
+
         /// <summary>
         /// A static ViewModel used by the views to bind against.
         /// </summary>

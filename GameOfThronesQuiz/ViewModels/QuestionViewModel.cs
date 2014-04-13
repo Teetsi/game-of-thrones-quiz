@@ -10,8 +10,9 @@ using System.Windows.Media.Animation;
 
 namespace GameOfThronesQuiz.ViewModels
 {
-    public class ItemViewModel : INotifyPropertyChanged
+    public class QuestionViewModel : INotifyPropertyChanged
     {
+
         private string _id;
         /// <summary>
         /// Sample ViewModel property; this property is used to identify the object.
@@ -33,65 +34,66 @@ namespace GameOfThronesQuiz.ViewModels
             }
         }
 
-        private string _lineOne;
+        private string _question;
         /// <summary>
         /// Sample ViewModel property; this property is used in the view to display its value using a Binding.
         /// </summary>
         /// <returns></returns>
-        public string LineOne
+        public string Question
         {
             get
             {
-                return _lineOne;
+                return _question;
             }
             set
             {
-                if (value != _lineOne)
+                if (value != _question)
                 {
-                    _lineOne = value;
-                    NotifyPropertyChanged("LineOne");
+                    _question = value;
+                    NotifyPropertyChanged("Question");
                 }
             }
         }
 
-        private string _lineTwo;
+        private int _correct;
         /// <summary>
         /// Sample ViewModel property; this property is used in the view to display its value using a Binding.
         /// </summary>
         /// <returns></returns>
-        public string LineTwo
+        public int Correct
         {
             get
             {
-                return _lineTwo;
+                return _correct;
             }
             set
             {
-                if (value != _lineTwo)
+                if (value != _correct)
                 {
-                    _lineTwo = value;
-                    NotifyPropertyChanged("LineTwo");
+                    _correct = value;
+                    NotifyPropertyChanged("Correct");
                 }
             }
         }
 
-        private string _lineThree;
+
+        private string[] _answers;
         /// <summary>
         /// Sample ViewModel property; this property is used in the view to display its value using a Binding.
         /// </summary>
         /// <returns></returns>
-        public string LineThree
+        public string[] Answers
         {
             get
             {
-                return _lineThree;
+                return _answers;
             }
             set
             {
-                if (value != _lineThree)
+                if (value != _answers)
                 {
-                    _lineThree = value;
-                    NotifyPropertyChanged("LineThree");
+                    _answers = value;
+                    NotifyPropertyChanged("Answers");
                 }
             }
         }

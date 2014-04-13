@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<root>
+  <quiz>
+    <id>0</id>
+    <question>What is the name of the first character to die in Game of Thrones?</question>
+    <answer>Benjen Stark</answer>
+    <answer>Gared</answer>
+    <answer>Will</answer>
+    <answer>Waymar Royce</answer>
+    <correct>4</correct>
+  </quiz>
+  <quiz>
+    <id>1</id>
+    <question>What is the name of the butcher's son that Joffrey bullies and Arya tries to save?</question>
+    <answer>Mycah</answer>
+    <answer>Stiv</answer>
+    <answer>Grenn</answer>
+    <answer>Sam</answer>
+    <correct>1</correct>
+  </quiz>
+  <quiz>
+    <id>2</id>
+    <question>What man from Winterfell accompanies Catelyn Stark to King's Landing?</question>
+    <answer>Harrion Karstark</answer>
+    <answer>Howland Reed</answer>
+    <answer>Jon Umber</answer>
+    <answer>Rodrik Cassel</answer>
+    <correct>4</correct>
+  </quiz>
+  <quiz>
+    <id>3</id>
+    <question>What were Jon Arryn's dying words?</question>
+    <answer>"The blood is strong."</answer>
+    <answer>"The seed is strong."</answer>
+    <answer>"The line is strong."</answer>
+    <answer>"The boy is strong."</answer>
+    <correct>2</correct>
+  </quiz>
+  <quiz>
+    <id>4</id>
+    <question>What region of Westeros is Loras Tyrell from?</question>
+    <answer>Highgarden</answer>
+    <answer>Dorne</answer>
+    <answer>Riverrun</answer>
+    <answer>Harrenhal</answer>
+    <correct>1</correct>
+  </quiz>
+  <quiz>
+    <id>5</id>
+    <question>What are the names of Daenerys' murdered niece and nephew?</question>
+    <answer>Rhaella and Aegon</answer>
+    <answer>Jaehaerys and Rhaella</answer>
+    <answer>Viserys and Rhaenys</answer>
+    <answer>Rhaenys and Aegon</answer>
+    <correct>4</correct>
+  </quiz>
+  <quiz>
+    <id>6</id>
+    <question>Who kidnapped Lyanna Stark, the woman Robert was in love with before he married Cersei?</question>
+    <answer>Aerys</answer>
+    <answer>Quentyn</answer>
+    <answer>Rhaegar</answer>
+    <answer>Trystane</answer>
+    <correct>3</correct>
+  </quiz>
+  <quiz>
+    <id>7</id>
+    <question>Who is named captain of the City Watch after Robert Baratheon dies?</question>
+    <answer>Arys Oakheart</answer>
+    <answer>Janos Slynt</answer>
+    <answer>Boros Blount</answer>
+    <answer>Jaime Lannister</answer>
+    <correct>2</correct>
+  </quiz>
+  <quiz>
+    <id>8</id>
+    <question>What was the name of the woman that Tyrion married when he was young?</question>
+    <answer>Tysha</answer>
+    <answer>Tyene</answer>
+    <answer>Obara</answer>
+    <answer>Nymeria</answer>
+    <correct>1</correct>
+  </quiz>
+  <quiz>
+    <id>9</id>
+    <question>What head on a spike, aside from Ned Stark's, does Joffrey point out to Sansa?</question>
+    <answer>Septa Donyse</answer>
+    <answer>Septa Melicent</answer>
+    <answer>Septa Unella</answer>
+    <answer>Septa Mordane</answer>
+    <correct>4</correct>
+  </quiz>
+</root>
