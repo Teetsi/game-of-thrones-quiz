@@ -47,6 +47,24 @@ namespace GameOfThronesQuiz.ViewModels
             this.IsDataLoaded = true;
         }
 
+        public void selectRandomQuestions()
+        {
+            Random random = new Random();
+            ObservableCollection<QuestionViewModel> result = new ObservableCollection<QuestionViewModel>();
+
+            List<QuestionViewModel> items = this.originalQuestions.Cast<QuestionViewModel>().ToList();
+            int i = App.numOfQuestions;
+
+            while (i > 0)
+            {
+                var index = random.Next(items.Count());
+                result.Add(items[index]);
+                items.RemoveAt(index);
+                i--;
+            }
+            this.Items = result;
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
         private void NotifyPropertyChanged(String propertyName)
         {
