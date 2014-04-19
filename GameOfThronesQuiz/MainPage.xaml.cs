@@ -37,7 +37,7 @@ namespace GameOfThronesQuiz
 
         private void StartButton_Click(object sender, RoutedEventArgs e)
         {
-            //App.ViewModel.selectRandomQuestions();
+            App.ViewModel.selectRandomQuestions();
 
             NavigationService.Navigate(
                 new Uri("/QuestionsPage.xaml?question=0", UriKind.Relative));

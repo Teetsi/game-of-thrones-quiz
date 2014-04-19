@@ -75,7 +75,7 @@ namespace GameOfThronesQuiz
             }
             else
             {
-                //NavigationService.Navigate(new Uri("/ResultPage.xaml?score=" + CalcScore(), UriKind.Relative));
+                NavigationService.Navigate(new Uri("/ResultPage.xaml?score=" + CalcScore(), UriKind.Relative));
             }
         }
 
