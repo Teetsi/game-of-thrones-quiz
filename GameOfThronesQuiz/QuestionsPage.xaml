@@ -23,8 +23,26 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,0,12,0">
-            <TextBlock x:Name="questionIndex" Text="{Binding}" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock Text="{Binding Question}" Style="{StaticResource LongListSelectorGroupHeaderLetterTileStyle}" TextWrapping="Wrap">
+            <Grid d:DataContext="{d:DesignData /SampleData/QuestionViewModelSampleData.xaml}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock
+                    Grid.Column="0"
+                    x:Name="questionIndex"
+                    Text="{Binding ID}"
+                    Style="{StaticResource PhoneTextNormalStyle}"
+                    Margin="12,0,0,0"
+                    HorizontalAlignment="Left"
+                    />
+                <StackPanel Grid.Column="1" x:Name="lives" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Image x:Name="live1" Source="/Assets/Images/heart-full-128.png" Width="24" Margin="0,0,0,0"/>
+                    <Image x:Name="live2" Source="/Assets/Images/heart-full-128.png" Width="24" Margin="12,0,0,0"/>
+                    <Image x:Name="live3" Source="/Assets/Images/heart-full-128.png" Width="24" Margin="12,0,0,0"/>
+                </StackPanel>
+            </Grid>
+            <TextBlock Text="{Binding Question}" Style="{StaticResource LongListSelectorGroupHeaderLetterTileStyle}" TextWrapping="Wrap" d:DataContext="{d:DesignData /SampleData/QuestionViewModelSampleData.xaml}">
             </TextBlock>
         </StackPanel>
 
