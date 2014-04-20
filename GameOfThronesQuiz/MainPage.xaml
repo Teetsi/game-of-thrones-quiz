@@ -42,22 +42,12 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Grid.Resources>
-            <Storyboard x:Name="bg">
-                <DoubleAnimation
-                    Storyboard.TargetName="pageBg"
-                    Storyboard.TargetProperty="Opacity"
-                    From="1.0" To="0.0" Duration="0:0:1"
-                    RepeatBehavior="Forever"
-                    AutoReverse="True"/>
-            </Storyboard>
-        </Grid.Resources>
         <Grid.Background>
             <ImageBrush
                 x:Name="pageBg"
-                ImageSource="\Assets\Images\game-of-thrones-poster-1.jpg"
+                ImageSource="/Assets/Images/poster-dark.jpg"
                 Stretch="UniformToFill"
-                Opacity="0.2"/>
+                Opacity="0.3"/>
         </Grid.Background>
         <StackPanel Grid.Row="0" Margin="12,12,12,10">
             <Image Source="/Assets/Images/logo_white.png"/>

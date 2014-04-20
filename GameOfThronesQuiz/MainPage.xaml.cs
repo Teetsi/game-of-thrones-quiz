@@ -9,6 +9,7 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using GameOfThronesQuiz.Resources;
 using GameOfThronesQuiz.ViewModels;
+using System.Windows.Media.Imaging;
 
 namespace GameOfThronesQuiz
 {
@@ -21,9 +22,6 @@ namespace GameOfThronesQuiz
 
             // Set the data context of the LongListSelector control to the sample data
             DataContext = App.ViewModel;
-
-            // Sample code to localize the ApplicationBar
-            //BuildLocalizedApplicationBar();
         }
 
         // Load data for the ViewModel Items
