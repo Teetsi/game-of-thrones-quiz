@@ -1,0 +1,14 @@
+﻿<ViewModels:QuestionViewModel xmlns:ViewModels="clr-namespace:GameOfThronesQuiz.ViewModels" xmlns:System="clr-namespace:System;assembly=mscorlib" Correct="68" ID="Aptent auctor" Question="Vestibulum dis aenean integer curabitur">
+	<ViewModels:QuestionViewModel.Answers>
+		<System:String>Maecenas mauris est</System:String>
+		<System:String>Cras hac praesent</System:String>
+		<System:String>Nullam phasellus consequat quisque duis</System:String>
+		<System:String>Leo nunc</System:String>
+		<System:String>Mus donec amet etiam</System:String>
+		<System:String>Ante arcu nec non diam</System:String>
+		<System:String>Fusce lorem aptent</System:String>
+		<System:String>Accumsan vivamus bibendum</System:String>
+		<System:String>Auctor morbi nulla dictumst eget</System:String>
+		<System:String>Convallis eleifend adipiscing aliquam</System:String>
+	</ViewModels:QuestionViewModel.Answers>
+</ViewModels:QuestionViewModel>
