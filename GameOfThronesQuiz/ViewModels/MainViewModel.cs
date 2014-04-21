@@ -36,7 +36,7 @@ namespace GameOfThronesQuiz.ViewModels
             var list = from query in doc.Descendants("quiz")
                        select new QuestionViewModel
                        {
-                           ID = (string)query.Element("id"),
+                           ID = (int)query.Element("id"),
                            Question = (string)query.Element("question"),
                            Answers = query.Elements("answer").Select(x => x.Value).ToArray(),
                            Correct = (int)query.Element("correct")

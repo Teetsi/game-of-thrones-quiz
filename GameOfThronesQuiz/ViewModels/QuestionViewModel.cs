@@ -13,12 +13,12 @@ namespace GameOfThronesQuiz.ViewModels
     public class QuestionViewModel : INotifyPropertyChanged
     {
 
-        private string _id;
+        private int _id;
         /// <summary>
         /// Sample ViewModel property; this property is used to identify the object.
         /// </summary>
         /// <returns></returns>
-        public string ID
+        public int ID
         {
             get
             {
