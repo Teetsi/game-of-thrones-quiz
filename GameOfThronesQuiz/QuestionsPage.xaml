@@ -23,7 +23,7 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,0,12,0">
-            <Grid d:DataContext="{d:DesignData /SampleData/QuestionViewModelSampleData.xaml}">
+            <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
@@ -35,15 +35,27 @@
                     Style="{StaticResource PhoneTextNormalStyle}"
                     Margin="12,0,0,0"
                     HorizontalAlignment="Left"
+					d:DataContext="{d:DesignData /SampleData/QuestionViewModelSampleData.xaml}"
                     />
                 <StackPanel Grid.Column="1" x:Name="lives" Orientation="Horizontal" HorizontalAlignment="Right">
-                    <Image x:Name="live1" Source="/Assets/Images/heart-full-128.png" Width="24" Margin="0,0,0,0"/>
-                    <Image x:Name="live2" Source="/Assets/Images/heart-full-128.png" Width="24" Margin="12,0,0,0"/>
-                    <Image x:Name="live3" Source="/Assets/Images/heart-full-128.png" Width="24" Margin="12,0,0,0"/>
+                    <Rectangle x:Name="live1" Height="24" Width="24" Fill="{StaticResource PhoneContrastBackgroundBrush}" Stroke="Transparent">
+                        <Rectangle.OpacityMask>
+                            <ImageBrush Stretch="Fill" ImageSource="/Assets/Images/heart-full-128.png"/>
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                    <Rectangle x:Name="live2" Height="24" Width="24" Fill="{StaticResource PhoneContrastBackgroundBrush}" Stroke="Transparent">
+                        <Rectangle.OpacityMask>
+                            <ImageBrush Stretch="Fill" ImageSource="/Assets/Images/heart-full-128.png"/>
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
+                    <Rectangle x:Name="live3" Height="24" Width="24" Fill="{StaticResource PhoneContrastBackgroundBrush}" Stroke="Transparent">
+                        <Rectangle.OpacityMask>
+                            <ImageBrush Stretch="Fill" ImageSource="/Assets/Images/heart-full-128.png"/>
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
                 </StackPanel>
             </Grid>
-            <TextBlock Text="{Binding Question}" Style="{StaticResource LongListSelectorGroupHeaderLetterTileStyle}" TextWrapping="Wrap" d:DataContext="{d:DesignData /SampleData/QuestionViewModelSampleData.xaml}">
-            </TextBlock>
+            <TextBlock Text="{Binding Question}" Style="{StaticResource LongListSelectorGroupHeaderLetterTileStyle}" TextWrapping="Wrap" d:DataContext="{d:DesignData /SampleData/QuestionViewModelSampleData.xaml}"/>
         </StackPanel>
 
         <StackPanel x:Name="ButtonPanel" Grid.Row="2" Margin="12,0,12,0">
