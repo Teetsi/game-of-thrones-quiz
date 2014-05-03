@@ -1,5 +1,5 @@
 ﻿<phone:PhoneApplicationPage
-    x:Class="GameOfThronesQuiz.ResultPage"
+    x:Class="GameOfThronesQuiz.FailedPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
@@ -44,20 +44,22 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="0" Margin="12,0,12,0">
-            <TextBlock x:Name="summary" Text="{Binding}" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
+            <TextBlock x:Name="summary" Text="Failed" Style="{StaticResource PhoneTextHugeStyle}"/>
         </StackPanel>
 
         <StackPanel x:Name="TitlePanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBlock x:Name="percentageBox" Text="{Binding}" Style="{StaticResource PhoneTextHugeStyle}"/>
-            <TextBlock x:Name="scoreBox" Text="{Binding}" Style="{StaticResource LongListSelectorGroupHeaderStyle}"/>
-            <TextBlock x:Name="time" Text="{Binding}" Style="{StaticResource LongListSelectorGroupHeaderStyle}"/>
+            <TextBlock
+                x:Name="scoreBox"
+                TextWrapping="Wrap"
+                Text="You have to answer all questions correctly to succeed."
+                Style="{StaticResource LongListSelectorGroupHeaderStyle}"/>
         </StackPanel>
 
         <StackPanel x:Name="ContentPanel" Grid.Row="2" Margin="12,12,12,12">
             <Button Click="StartButton_Click" Height="185">
-                <TextBlock Style="{StaticResource PhoneTextLargeStyle}">Try one more time</TextBlock>
+                <TextBlock Style="{StaticResource PhoneTextLargeStyle}">Try again</TextBlock>
             </Button>
         </StackPanel>
     </Grid>
-    
+
 </phone:PhoneApplicationPage>
