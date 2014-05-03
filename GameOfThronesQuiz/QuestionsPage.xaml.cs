@@ -61,21 +61,50 @@ namespace GameOfThronesQuiz
                 ButtonPanel.Children.Add(button);
             }
 
+            // fade out the hearts
+            updateHearts(App.numWrongAnswers);
         }
 
 
         private void GoNextQuestion(object sender, RoutedEventArgs e)
         {
-            var value = (int)((Button)sender).Tag;
-            SetScore(value);
+            var button = (Button)sender;
+            var value = (int)button.Tag;
 
-            if ((questionNumber + 1) < App.numOfQuestions)
+            // wrong answer
+            if (value == 0)
             {
-                NavigationService.Navigate(new Uri("/QuestionsPage.xaml?question=" + (questionNumber + 1), UriKind.Relative));
+                App.numWrongAnswers += 1;
+                if (App.numWrongAnswers >= App.numLives)
+                {
+                    NavigationService.Navigate(new Uri("/ResultPage.xaml?score=" + CalcScore(), UriKind.Relative));
+                }
+                else
+                {
+                    button.IsEnabled = false;
+                    updateHearts(App.numWrongAnswers);
+                }
             }
+            // good answer
             else
             {
-                NavigationService.Navigate(new Uri("/ResultPage.xaml?score=" + CalcScore(), UriKind.Relative));
+                SetScore(value);
+                if ((questionNumber + 1) < App.numOfQuestions)
+                {
+                    NavigationService.Navigate(new Uri("/QuestionsPage.xaml?question=" + (questionNumber + 1), UriKind.Relative));
+                }
+                else
+                {
+                    NavigationService.Navigate(new Uri("/ResultPage.xaml?score=" + CalcScore(), UriKind.Relative));
+                }
+            }
+        }
+
+        private void updateHearts(int num)
+        {
+            for (int i = 0; i < num; i++)
+            {
+                lives.Children[i].Opacity = 0.3;
             }
         }
 
