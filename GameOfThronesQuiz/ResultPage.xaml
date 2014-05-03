@@ -46,7 +46,7 @@
                 x:Name="pageBg"
                 ImageSource="/Assets/Images/win.jpg"
                 Stretch="UniformToFill"
-                Opacity="0.3"/>
+                Opacity="0.5"/>
         </Grid.Background>
 
         <StackPanel Grid.Row="0" Margin="12,0,12,0">
@@ -59,8 +59,8 @@
                 />
         </StackPanel>
         
-        <StackPanel Grid.Row="1" Margin="12,12,12,12">
-            <Button Click="StartButton_Click" Height="185">
+        <StackPanel Grid.Row="1" Margin="12,12,12,12" VerticalAlignment="Bottom">
+            <Button Click="StartButton_Click" Height="96">
                 <TextBlock Style="{StaticResource PhoneTextLargeStyle}">Do it again</TextBlock>
             </Button>
         </StackPanel>

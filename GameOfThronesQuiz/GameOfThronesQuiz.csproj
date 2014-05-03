@@ -158,6 +158,7 @@
     <Content Include="Assets\Images\logo_white.png" />
     <Content Include="Assets\Images\poster-dark.jpg" />
     <Content Include="Assets\Images\win.jpg" />
+    <Content Include="Assets\Images\win_transparent2.png" />
     <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

@@ -60,8 +60,8 @@
         </StackPanel>
 
         <!--ContentPanel contains LongListSelector and LongListSelector ItemTemplate. Place additional content here-->
-        <StackPanel x:Name="ContentPanel" Grid.Row="2" Margin="12,12,12,12">
-            <Button Click="StartButton_Click" Height="185">
+        <StackPanel x:Name="ContentPanel" Grid.Row="2" Margin="12,12,12,12" VerticalAlignment="Bottom">
+            <Button Click="StartButton_Click" Height="96">
                 <TextBlock Style="{StaticResource PhoneTextLargeStyle}">Start</TextBlock>
             </Button>
         </StackPanel>
