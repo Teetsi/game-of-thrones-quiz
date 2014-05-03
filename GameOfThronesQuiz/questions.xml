@@ -90,4 +90,49 @@
     <answer>Septa Mordane</answer>
     <correct>4</correct>
   </quiz>
+  <quiz>
+    <id>10</id>
+    <question>Which of these locations is farthest South?</question>
+    <answer>Castle Black</answer>
+    <answer>Winterfell</answer>
+    <answer>The Eyrie</answer>
+    <answer>King's Landing</answer>
+    <correct>4</correct>
+  </quiz>
+  <quiz>
+    <id>11</id>
+    <question>Who killed Ser Hugh of the Vale?</question>
+    <answer>Ser Gregor Clegane</answer>
+    <answer>Ser Loras Tyrell</answer>
+    <answer>Jory Cassel</answer>
+    <answer>Ser Ilyn Payne</answer>
+    <correct>1</correct>
+  </quiz>
+  <quiz>
+    <id>12</id>
+    <question>Which direwolf belongs to Robb Stark?</question>
+    <answer>Shaggydog</answer>
+    <answer>Summer</answer>
+    <answer>Grey Wind</answer>
+    <answer>Ghost</answer>
+    <correct>3</correct>
+  </quiz>
+  <quiz>
+    <id>13</id>
+    <question>Which Night's Watch recruit is assigned to the Rangers?</question>
+    <answer>Jon Snow</answer>
+    <answer>Grenn</answer>
+    <answer>Samwell Tarly</answer>
+    <answer>Pypar (Pyp)</answer>
+    <correct>2</correct>
+  </quiz>
+  <quiz>
+    <id>14</id>
+    <question>Which great house does Walder Frey owe fealty to?</question>
+    <answer>House Lannister</answer>
+    <answer>House Stark</answer>
+    <answer>House Tully</answer>
+    <answer>House Arryn</answer>
+    <correct>3</correct>
+  </quiz>
 </root>

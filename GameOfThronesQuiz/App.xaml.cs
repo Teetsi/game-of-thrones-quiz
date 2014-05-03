@@ -16,7 +16,7 @@ namespace GameOfThronesQuiz
         private static MainViewModel viewModel = null;
 
         public static int questionNumber = 0;
-        public static int numOfQuestions = 10;
+        public static int numOfQuestions = 15;
         public static int numWrongAnswers = 0;
         public static int numLives = 3;
         public static int[] score = new int[numOfQuestions];
