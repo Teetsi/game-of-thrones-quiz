@@ -21,53 +21,35 @@ namespace GameOfThronesQuiz
         {
             if (DataContext == null)
             {
-                string scoreText = "";
-                int score = 0;
                 TimeSpan spentTime = DateTime.Now.Subtract(App.startTime);
+                String baseText = "You answered all the question right";
 
-                if (NavigationContext.QueryString.TryGetValue("score", out scoreText))
+                if (spentTime.Hours > 0)
                 {
-                    score = int.Parse(scoreText);
-                    percentageBox.DataContext = (int)((score * 100.0) / App.numOfQuestions) + "%";
-                    scoreBox.DataContext = String.Format("{0} of {1} correct", score, App.numOfQuestions);
-
-                    if (score > App.numOfQuestions / 2)
+                    summary.DataContext = baseText + ", it took more than a hour.";
+                }
+                else
+                {
+                    var formatString = "";
+                    if (spentTime.Minutes > 1)
                     {
-                        summary.DataContext = "Well done!";
+                        formatString = "%m' mins '";
+                    }
+                    else if (spentTime.Minutes == 1)
+                    {
+                        formatString = "%m' min '";
+                    }
+
+                    if (spentTime.Seconds > 1)
+                    {
+                        formatString += "%s' secs'";
                     }
                     else
                     {
-                        summary.DataContext = "Could be better!";
+                        formatString += "%s' sec'";
                     }
 
-                    if (spentTime.Hours > 0)
-                    {
-                        time.DataContext = "Took more than a hour";
-                    }
-                    else
-                    {
-                        var formatString = "";
-                        if (spentTime.Minutes > 1)
-                        {
-                            formatString = "%m' mins '";
-                        }
-                        else if (spentTime.Minutes == 1)
-                        {
-                            formatString = "%m' min '";
-                        }
-
-                        if (spentTime.Seconds > 1)
-                        {
-                            formatString += "%s' secs'";
-                        }
-                        else
-                        {
-                            formatString += "%s' sec'";
-                        }
-
-                        time.DataContext = "Took " + spentTime.ToString(formatString);
-                    }
-
+                    summary.DataContext = baseText + " in " + spentTime.ToString(formatString) + ".";
                 }
             }
         }

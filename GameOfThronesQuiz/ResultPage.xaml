@@ -36,26 +36,32 @@
         </toolkit:NavigationOutTransition>
     </toolkit:TransitionService.NavigationOutTransition>
 
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush
+                x:Name="pageBg"
+                ImageSource="/Assets/Images/win.jpg"
+                Stretch="UniformToFill"
+                Opacity="0.3"/>
+        </Grid.Background>
 
         <StackPanel Grid.Row="0" Margin="12,0,12,0">
-            <TextBlock x:Name="summary" Text="{Binding}" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
+            <TextBlock Text="Well done!" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock
+                x:Name="summary"
+                Text="{Binding}"
+                Style="{StaticResource LongListSelectorGroupHeaderLetterTileStyle}"
+                TextWrapping="Wrap"
+                />
         </StackPanel>
-
-        <StackPanel x:Name="TitlePanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBlock x:Name="percentageBox" Text="{Binding}" Style="{StaticResource PhoneTextHugeStyle}"/>
-            <TextBlock x:Name="scoreBox" Text="{Binding}" Style="{StaticResource LongListSelectorGroupHeaderStyle}"/>
-            <TextBlock x:Name="time" Text="{Binding}" Style="{StaticResource LongListSelectorGroupHeaderStyle}"/>
-        </StackPanel>
-
-        <StackPanel x:Name="ContentPanel" Grid.Row="2" Margin="12,12,12,12">
+        
+        <StackPanel Grid.Row="1" Margin="12,12,12,12">
             <Button Click="StartButton_Click" Height="185">
-                <TextBlock Style="{StaticResource PhoneTextLargeStyle}">Try one more time</TextBlock>
+                <TextBlock Style="{StaticResource PhoneTextLargeStyle}">Do it again</TextBlock>
             </Button>
         </StackPanel>
     </Grid>

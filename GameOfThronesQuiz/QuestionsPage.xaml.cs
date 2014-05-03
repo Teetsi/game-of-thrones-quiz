@@ -72,12 +72,12 @@ namespace GameOfThronesQuiz
             var value = (int)button.Tag;
 
             // wrong answer
-            if (value == 0)
+            if (value == 1)
             {
                 App.numWrongAnswers += 1;
                 if (App.numWrongAnswers >= App.numLives)
                 {
-                    NavigationService.Navigate(new Uri("/ResultPage.xaml?score=" + CalcScore(), UriKind.Relative));
+                    NavigationService.Navigate(new Uri("/FailedPage.xaml", UriKind.Relative));
                 }
                 else
                 {
