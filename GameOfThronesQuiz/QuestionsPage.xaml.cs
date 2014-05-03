@@ -72,7 +72,7 @@ namespace GameOfThronesQuiz
             var value = (int)button.Tag;
 
             // wrong answer
-            if (value == 1)
+            if (value == 0)
             {
                 App.numWrongAnswers += 1;
                 if (App.numWrongAnswers >= App.numLives)

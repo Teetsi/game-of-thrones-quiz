@@ -54,7 +54,10 @@
         </StackPanel>
 
         <StackPanel Grid.Row="1" Margin="12,24,12,10">
-            <TextBlock TextWrapping="Wrap" Style="{StaticResource PhoneTextExtraLargeStyle}" TextAlignment="Center">
+            <TextBlock
+                TextWrapping="Wrap"
+                Style="{StaticResource PhoneTextExtraLargeStyle}"
+                TextAlignment="Center">
             	<Run Text="Find out once and for all how well you know Game of Thrones."/>
             </TextBlock>
         </StackPanel>
